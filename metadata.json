@@ -1,0 +1,8 @@
+{
+  "name": "Arabic Grammar Analyzer",
+  "description": "تطبيق ذكي لإعراب الجمل العربية كلمة بكلمة مع توضيح المبني والمعرب وعلامات الإعراب وشرح القواعد النحوية بالتفصيل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
