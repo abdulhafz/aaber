@@ -409,7 +409,18 @@ export default function App() {
     }
 
     try {
-      const response = await fetch("/api/parse", {
+      // Resolve API domain for Android webview environments
+      const isMobileNative = 
+        window.location.origin.includes("localhost") || 
+        window.location.origin.includes("capacitor://") ||
+        (window as any).Capacitor;
+      
+      const appUrl = (import.meta as any).env.VITE_APP_URL;
+      const apiBaseUrl = isMobileNative && appUrl 
+        ? appUrl.replace(/\/$/, "") 
+        : "";
+
+      const response = await fetch(`${apiBaseUrl}/api/parse`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

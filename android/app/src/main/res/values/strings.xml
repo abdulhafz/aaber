@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">المعرب الذكي</string>
+    <string name="title_activity_main">المعرب الذكي</string>
+    <string name="package_name">com.moarab.smart</string>
+    <string name="custom_url_scheme">com.moarab.smart</string>
+</resources>
